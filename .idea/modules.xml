@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Cawler.iml" filepath="$PROJECT_DIR$/Cawler.iml" />
       <module fileurl="file://$PROJECT_DIR$/cawler-core/cawler-core.iml" filepath="$PROJECT_DIR$/cawler-core/cawler-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cawler-service/cawler-service.iml" filepath="$PROJECT_DIR$/cawler-service/cawler-service.iml" />
     </modules>
   </component>
 </project>

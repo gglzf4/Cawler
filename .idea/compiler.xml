@@ -23,6 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="cawler-core" />
+        <module name="cawler-service" />
       </profile>
     </annotationProcessing>
   </component>

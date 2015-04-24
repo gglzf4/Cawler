@@ -9,20 +9,15 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cawler-core</artifactId>
+    <artifactId>cawler-service</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpclient</artifactId>
-            <version>4.4.1</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jsoup</groupId>
-            <artifactId>jsoup</artifactId>
-            <version>1.8.2</version>
+            <groupId>com.zrm.cawler</groupId>
+            <artifactId>cawler-core</artifactId>
+            <version>${cawler.version}</version>
         </dependency>
     </dependencies>
+
 
 </project>
