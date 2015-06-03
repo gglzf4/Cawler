@@ -15,13 +15,13 @@
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
-            <version>4.4.1</version>
+            <version>${httpclient.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.jsoup</groupId>
             <artifactId>jsoup</artifactId>
-            <version>1.8.2</version>
+            <version>${jsoup.version}</version>
         </dependency>
     </dependencies>
 

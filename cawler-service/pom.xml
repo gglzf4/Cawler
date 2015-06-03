@@ -15,7 +15,7 @@
         <dependency>
             <groupId>com.zrm.cawler</groupId>
             <artifactId>cawler-core</artifactId>
-            <version>${cawler.version}</version>
+            <version>1.0</version>
         </dependency>
     </dependencies>
 
