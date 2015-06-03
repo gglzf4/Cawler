@@ -30,13 +30,14 @@ public class XiCiProxy implements IpProxy{
         if(content != null){
             Document document = Jsoup.parse(content);
             Element table = document.getElementById("ip_list");
-            Elements elements = table.children();
+            Elements elements = table.child(0).children();
             for(Element trElement : elements){
                 if(!trElement.hasClass("subtitle")){
-                    Elements tds = trElement.getElementsByTag("td");
-                    for(Element td:tds){
-                        System.out.println("ip="+tds.get(1).text()+",port="+tds.get(2).text()+",protcol="+tds.get(5).text());
-                    }
+                    System.out.println(trElement.html());
+                    System.out.println("----------------");
+                    Elements tds = trElement.children();
+                    System.out.println("ip="+tds.get(1).text()+",port="+tds.get(2).text()+",protcol="+tds.get(5).text());
+
                 }
             }
         }
