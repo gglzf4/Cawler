@@ -29,17 +29,22 @@ public class XiCiProxy implements IpProxy{
 
         if(content != null){
             Document document = Jsoup.parse(content);
+            System.out.println(document.html());
             Element table = document.getElementById("ip_list");
-            Elements elements = table.child(0).children();
-            for(Element trElement : elements){
-                if(!trElement.hasClass("subtitle")){
-                    System.out.println(trElement.html());
-                    System.out.println("----------------");
-                    Elements tds = trElement.children();
-                    System.out.println("ip="+tds.get(1).text()+",port="+tds.get(2).text()+",protcol="+tds.get(5).text());
-
+            if(table != null){
+                Element tbody = table.child(0);
+                Elements elements = tbody.children();
+                for(int i=0;i<elements.size();i++){
+                    Element trElement = elements.get(i);
+                    if(trElement.hasAttr("class") && !trElement.hasClass("subtitle")){
+                        //System.out.println(trElement.html());
+                        System.out.println("----------------");
+                        Elements tds = trElement.children();
+                        System.out.println("ip="+tds.get(1).text()+",port="+tds.get(2).text()+",protcol="+tds.get(5).text());
+                    }
                 }
             }
+
         }
     }
 }
